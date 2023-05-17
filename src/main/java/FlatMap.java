@@ -16,6 +16,7 @@ public class FlatMap {
         List<Integer> numeros = listas.stream()
                 .flatMap(List::stream)
                 .collect(Collectors.toList());
+        System.out.println(numeros);
 
 
         List<String> listaPalabras = Arrays.asList("Una","Dos","Tres","Cuarta");
